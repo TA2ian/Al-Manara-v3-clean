@@ -1,0 +1,23 @@
+[project]
+name = "al-manara-v3"
+version = "0.1.0"
+description = "Al-Manara V3 Telegram bot — clean rebuild"
+requires-python = ">=3.12"
+dependencies = [
+    "aiogram==3.31.0",
+    "pillow>=12.3.0",
+    "supabase>=2,<3",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+exclude = ["tests*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

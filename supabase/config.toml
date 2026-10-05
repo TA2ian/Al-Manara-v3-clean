@@ -1,0 +1,24 @@
+# Al-Manara v2 Supabase CLI configuration
+# Project reference is non-secret and intentionally stored here for deterministic tooling.
+project_id = "oiszcfqfrltwcnwgnzka"
+
+[db]
+major_version = 17
+
+[api]
+enabled = true
+
+[studio]
+enabled = true
+
+[inbucket]
+enabled = false
+
+[storage]
+enabled = false
+
+[realtime]
+enabled = false
+
+[analytics]
+enabled = false
